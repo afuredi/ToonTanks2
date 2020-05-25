@@ -6,5 +6,6 @@
 		"D:/Projects/UE4/ToonTanks/DerivedDataCache": true,
 		"D:/Projects/UE4/ToonTanks/Intermediate": true,
 		"D:/Projects/UE4/ToonTanks/Saved": true
-	}
+	},
+	"C_Cpp.errorSquiggles": "Disabled"
 }
