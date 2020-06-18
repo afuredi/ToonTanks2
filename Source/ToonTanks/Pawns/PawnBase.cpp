@@ -62,7 +62,7 @@ void APawnBase::HandleDestruction()
 	}
 	if(DeathSound)
 	{
-		UGameplayStatics::SpawnSoundAtLocation(this, DeathSound, GetActorLocation());
+		UGameplayStatics::PlaySoundAtLocation(this, DeathSound, GetActorLocation());
 	}
 	if (DeathShake)
 	{
