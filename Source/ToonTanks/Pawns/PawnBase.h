@@ -15,10 +15,9 @@ class TOONTANKS_API APawnBase : public APawn
 {
 	GENERATED_BODY()
 
-private:
-
-	// Components.
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
+private: 
+	// COMPONENTS
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))	
 	UCapsuleComponent* CapsuleComp;
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
 	UStaticMeshComponent* BaseMesh;
@@ -29,16 +28,14 @@ private:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
 	UHealthComponent* HealthComponent;
 
-	// Variables. 
+	// VARIABLES
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Projectile Type", meta = (AllowPrivateAccess = "true"))
 	TSubclassOf<AProjectileBase> ProjectileClass;
-
-	// EFFECTS
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Effects", meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(EditAnywhere, Category = "Effects")
 	UParticleSystem* DeathParticle;
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Effects", meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(EditAnywhere, Category = "Effects")
 	USoundBase* DeathSound;
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Effects", meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(EditAnywhere, Category = "Effects")
 	TSubclassOf<UCameraShake> DeathShake;
 
 public:
@@ -46,13 +43,11 @@ public:
 	APawnBase();
 
 	void PawnDestroyed();
-	
+	virtual void HandleDestruction();
+
 protected:
 
 	void RotateTurret(FVector LookAtTarget);
 
 	void Fire();
-
-	virtual void HandleDestruction();
-
 };

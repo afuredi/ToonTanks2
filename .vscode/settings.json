@@ -1,11 +1,9 @@
 {
 	"files.exclude": {
-		"D:/Projects/UE4/ToonTanks/.git": true,
-		"D:/Projects/UE4/ToonTanks/.vs": true,
-		"D:/Projects/UE4/ToonTanks/.vscode": true,
-		"D:/Projects/UE4/ToonTanks/Content": true,
-		"D:/Projects/UE4/ToonTanks/DerivedDataCache": true,
-		"D:/Projects/UE4/ToonTanks/Intermediate": true,
-		"D:/Projects/UE4/ToonTanks/Saved": true
+		"C:/Users/Rob/Desktop/ToonTanks/.vscode": true,
+		"C:/Users/Rob/Desktop/ToonTanks/Content": true,
+		"C:/Users/Rob/Desktop/ToonTanks/DerivedDataCache": true,
+		"C:/Users/Rob/Desktop/ToonTanks/Intermediate": true,
+		"C:/Users/Rob/Desktop/ToonTanks/Saved": true
 	}
 }
